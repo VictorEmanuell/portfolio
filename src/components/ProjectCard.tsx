@@ -3,7 +3,7 @@ import TestImage from '@/assets/profile.jpg';
 import {Button} from "@/components/Button";
 
 interface ProjectCardProps {
-    image: never;
+    image: string;
     tools: string;
     title: string;
     description: string;
