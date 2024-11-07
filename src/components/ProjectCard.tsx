@@ -3,13 +3,13 @@ import TestImage from '@/assets/profile.jpg';
 import {Button} from "@/components/Button";
 
 interface ProjectCardProps {
-    image: any;
+    image: never;
     tools: string;
     title: string;
     description: string;
 }
 
-export function ProjectCard({image, tools, title, description}: ProjectCardProps) {
+export function ProjectCard({tools, title, description}: ProjectCardProps) {
     return (
         <div className='w-72 border border-gray text-gray'>
             <Image
