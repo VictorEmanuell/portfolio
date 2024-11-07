@@ -1,7 +1,7 @@
 export function About() {
     return (
         <div className='w-full sm:mt-28 md:mt-40 flex flex-col justify-between items-start gap-12'>
-            <div className='w-full flex flex-row text-white items-center gap-4 relative'>
+            <div id='about' className='w-full flex flex-row text-white items-center gap-4 relative'>
                 <h3 className='text-2xl'>
                     <span className='text-primary'>#</span>sobre-mim
                 </h3>

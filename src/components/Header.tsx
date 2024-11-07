@@ -1,17 +1,38 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
 
 import Logo from '@/assets/logo.svg';
+import {useEffect, useState} from "react";
 
-const routes = [
-    {title: 'home', path: '/home'},
-    {title: 'projetos', path: '/projects'},
-    {title: 'sobre-mim', path: '/about'},
-    {title: 'formação', path: '/school'},
-    {title: 'contato', path: '/contact'},
+type RoutesType = Array<{
+    title: string;
+    position: number;
+}>
+
+const ROUTES = [
+    {title: 'projetos', elementId: 'projects'},
+    {title: 'habilidades', elementId: 'skills'},
+    {title: 'sobre-mim', elementId: 'about'},
+    {title: 'formação', elementId: 'courses'},
+    {title: 'contato', elementId: 'contact-and-media'},
 ]
 
 export function Header() {
+    const [routes, setRoutes] = useState<RoutesType>([]);
+
+    useEffect(() => {
+        setRoutes(
+            ROUTES.map((route) => {
+                return {
+                    title: route.title,
+                    position: (document.getElementById(route.elementId)?.offsetTop ?? 0) - 100,
+                };
+            }),
+        );
+    }, []);
+
     return (
         <header
             className='fixed flex flex-row max-w-[1100px] px-6 w-full bg-background z-50 py-8 justify-between items-center font-firacode'>
@@ -27,12 +48,13 @@ export function Header() {
             <div className='flex flex-row justify-between items-center gap-6 sm:hidden md:flex'>
                 {routes.map(route => {
                     return (
-                        <Link key={route.title} href={route.path}>
+                        <button key={route.title}
+                                onClick={() => window.scrollTo({top: route.position ?? 0, behavior: 'smooth'})}>
                             <p className='font-medium text-gray hover:underline'>
                                 <span className='text-primary'>#</span>
                                 {route.title}
                             </p>
-                        </Link>
+                        </button>
                     );
                 })}
             </div>

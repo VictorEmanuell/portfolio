@@ -4,7 +4,7 @@ import {ProjectCard} from "@/components/ProjectCard";
 export function Projects() {
     return (
         <div className='w-full sm:mt-28 md:mt-40 flex flex-col justify-between items-start gap-12'>
-            <div className='w-full flex flex-row text-white items-center gap-4 relative'>
+            <div id='projects' className='w-full flex flex-row text-white items-center gap-4 relative'>
                 <h3 className='text-2xl'>
                     <span className='text-primary'>#</span>projetos
                 </h3>
