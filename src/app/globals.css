@@ -2,20 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.mask-opacity-edge {
+    --mask: linear-gradient(to right,
+    rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0
+    ) 100% 50% / 100% 100%;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.ping {
+    animation: ping 500ms alternate infinite;
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes ping {
+    0%, 50% {
+        opacity: 0;
+    }
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #282C33;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ABB2BF;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #78CEDD;
 }
