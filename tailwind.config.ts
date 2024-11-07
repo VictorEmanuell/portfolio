@@ -16,6 +16,11 @@ export default {
                 gray: '#ABB2BF',
                 background: "#282C33",
             },
+            screens: {
+                'sm': '270px',
+                'md': '960px',
+                'lg': '1440px',
+            },
         },
     },
     plugins: [],

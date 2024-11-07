@@ -9,16 +9,16 @@ import DiscordIcon from '@/assets/icon-discord.png';
 
 export function ContactAndMedia() {
     return (
-        <div className='w-full mt-40 mb-20 flex flex-col justify-center items-start gap-4'>
+        <div className='w-full sm:mt-28 md:mt-40 mb-20 flex flex-col justify-center items-start gap-4'>
             <div className='w-full flex flex-row text-white items-center gap-4 relative'>
                 <h3 className='text-2xl'>
                     <span className='text-primary'>#</span>contato-e-redes
                 </h3>
 
-                <div className='w-64 h-0.5 bg-primary'/>
+                <div className='w-64 h-0.5 bg-primary sm:hidden md:flex'/>
             </div>
 
-            <div className='border border-gray p-4 pb-6 w-96 mt-6'>
+            <div className='border border-gray p-4 pb-6 sm:w-full md:w-96 mt-6'>
                 <Link
                     href={'https://wa.me/5579988130992'}
                     target='_blank'
@@ -28,7 +28,7 @@ export function ContactAndMedia() {
                         <Image src={WhatsAppIcon} alt={'Icone ddo WhatsApp'} width={20}/>
                     </div>
 
-                    <p>(79) 9 8813-0992</p>
+                    <p><span>(79) 9 8813-0992</span></p>
                 </Link>
 
                 <Link
@@ -44,7 +44,7 @@ export function ContactAndMedia() {
                 </Link>
             </div>
 
-            <div className='border border-gray p-4 pb-6 w-96'>
+            <div className='border border-gray p-4 pb-6 sm:w-full md:w-96'>
                 <Link
                     href={'https://www.linkedin.com/in/victoremanuell'}
                     target='_blank'
