@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import ProfileImage from '@/assets/profile.jpg';
 import {Button} from "@/components/Button";
+
+import ProfileImage from '@/assets/profile.jpg';
 
 export function Banner() {
     return (

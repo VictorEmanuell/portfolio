@@ -1,0 +1,136 @@
+{
+  "personal": {
+    "name": "Victor Emanuel",
+    "position": "Desenvolvedor FullStack",
+    "introduction": "Olá, meu nome é Victor e sou um entusiasta dedicado ao desenvolvimento de soluções tecnológicas. Nos últimos quatro anos, tenho me aprofundado nos estudos de programação, consolidando uma base sólida que abrange desde algoritmos fundamentais até os frameworks modernos da linguagem JavaScript. Com foco em eficiência, sou competente em resolver problemas e apresentar soluções de maneira ágil, contribuindo para a otimização de processos e a inovação em projetos de tecnologia.",
+    "from": {
+      "country": "Brasil",
+      "state": "Sergipe",
+      "city": "Aracaju"
+    }
+  },
+  "projects": [
+    {
+      "title": "Escola HP",
+      "description": "Site institucional da escola de jiu-jitsu Hygor-Peixoto. O site também é uma plataforma de gerenciamento de assinaturas.",
+      "tools": [
+        "TypeScript",
+        "NextJS",
+        "TailwindCSS",
+        "NodeJS",
+        "Express",
+        "TypeORM"
+      ],
+      "web": "https://escolahp.com.br/"
+    },
+    {
+      "title": "TechSeg",
+      "description": "Site institucional da TechSeg",
+      "tools": [
+        "TypeScript",
+        "NextJS",
+        "TailwindCSS"
+      ],
+      "web": "https://techseg.net.br/"
+    },
+    {
+      "title": "Among",
+      "description": "Site institucional da Among",
+      "tools": [
+        "TypeScript",
+        "NextJS",
+        "TailwindCSS"
+      ],
+      "web": "https://among.com.br/"
+    },
+    {
+      "title": "App Rolldice",
+      "description": "O app consiste em um aplicativo de gerenciamento de personagem de um RPG (no sistema Tormenta20) desenvolvido utilizando o framework React Native com Expo.",
+      "tools": [
+        "JavaScript",
+        "ReactNative",
+        "Expo"
+      ],
+      "repository": "https://github.com/VictorEmanuell/rolldice-mobile"
+    },
+    {
+      "title": "API Rolldice",
+      "description": "API desenvolvida para o App Rolldice utilizando o framework Rails do Ruby.",
+      "tools": [
+        "JavaScript",
+        "ReactNative",
+        "Expo"
+      ],
+      "repository": "https://github.com/VictorEmanuell/rolldice-mobile"
+    },
+    {
+      "title": "App de Anotações",
+      "description": "O app consiste em um aplicativo de anotações desenvolvido utilizando o framework React Native com Expo.",
+      "tools": [
+        "JavaScript",
+        "ReactNative",
+        "Expo"
+      ],
+      "repository": "https://github.com/VictorEmanuell/rolldice-mobile"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Linguagens",
+      "data": [
+        "TypeScript",
+        "JavaScript",
+        "C/C++",
+        "Ruby"
+      ]
+    },
+    {
+      "title": "Banco de dados",
+      "data": [
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "data": [
+        "ReactJS",
+        "ReactNative",
+        "Expo",
+        "NextJS",
+        "NodeJS",
+        "Express",
+        "PrismaORM",
+        "TypeORM"
+      ]
+    },
+    {
+      "title": "Outras",
+      "data": [
+        "HTML",
+        "CSS",
+        "TailwindCSS",
+        "Git",
+        "Git Flow",
+        "Git Trunk"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "Engenharia de Computação",
+      "institution": "Universidade Federal de Sergipe",
+      "startDate": "mai/2024",
+      "endDate": "mai/2029"
+    }
+  ],
+  "contact": [
+    "(79) 9 8813-0992",
+    "contato@victoremanuel.dev.br"
+  ],
+  "social-medias": [
+    "https://www.linkedin.com/in/victoremanuell",
+    "https://github.com/VictorEmanuell",
+    "https://discord.com/users/370716310147039234"
+  ]
+}

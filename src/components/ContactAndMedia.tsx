@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import WhatsAppIcon from '@/assets/icon-whatsapp.png';
-import EmailIcon from '@/assets/icon-email.png';
-import LinkedinIcon from '@/assets/icon-linkedin.png';
-import GitHubIcon from '@/assets/icon-github.png';
-import DiscordIcon from '@/assets/icon-discord.png';
+import WhatsAppIcon from '@/assets/icons/icon-whatsapp.png';
+import EmailIcon from '@/assets/icons/icon-email.png';
+import LinkedinIcon from '@/assets/icons/icon-linkedin.png';
+import GitHubIcon from '@/assets/icons/icon-github.png';
+import DiscordIcon from '@/assets/icons/icon-discord.png';
 
 export function ContactAndMedia() {
     return (
