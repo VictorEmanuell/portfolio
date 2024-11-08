@@ -50,7 +50,7 @@ export function Header() {
                     return (
                         <button key={route.title}
                                 onClick={() => window.scrollTo({top: route.position ?? 0, behavior: 'smooth'})}>
-                            <p className='font-medium text-gray hover:underline'>
+                            <p className='font-medium text-gray hover:underline hover:text-green-400'>
                                 <span className='text-primary'>#</span>
                                 {route.title}
                             </p>

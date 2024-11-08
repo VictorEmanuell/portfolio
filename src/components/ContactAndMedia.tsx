@@ -9,7 +9,7 @@ import DiscordIcon from '@/assets/icons/icon-discord.png';
 
 export function ContactAndMedia() {
     return (
-        <div className='w-full sm:mt-28 md:mt-40 mb-20 flex flex-col justify-center items-start gap-4'>
+        <div className='w-full sm:mt-20 md:mt-40 mb-20 flex flex-col justify-center items-start gap-4'>
             <div id='contact-and-media' className='w-full flex flex-row text-white items-center gap-4 relative'>
                 <h3 className='text-2xl'>
                     <span className='text-primary'>#</span>contato-e-redes

@@ -11,6 +11,7 @@
   },
   "projects": [
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/screen-escolahp.png?raw=true",
       "title": "Escola HP",
       "description": "Site institucional da escola de jiu-jitsu Hygor-Peixoto. O site também é uma plataforma de gerenciamento de assinaturas.",
       "tools": [
@@ -24,8 +25,9 @@
       "web": "https://escolahp.com.br/"
     },
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/screen-techseg.png?raw=true",
       "title": "TechSeg",
-      "description": "Site institucional da TechSeg",
+      "description": "Site institucional da TechSeg, empresa de consultoria em segurança do trabalho.",
       "tools": [
         "TypeScript",
         "NextJS",
@@ -34,8 +36,9 @@
       "web": "https://techseg.net.br/"
     },
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/screen-among.png?raw=true",
       "title": "Among",
-      "description": "Site institucional da Among",
+      "description": "Site institucional da Among.",
       "tools": [
         "TypeScript",
         "NextJS",
@@ -44,6 +47,7 @@
       "web": "https://among.com.br/"
     },
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/generic-screen.png?raw=true",
       "title": "App Rolldice",
       "description": "O app consiste em um aplicativo de gerenciamento de personagem de um RPG (no sistema Tormenta20) desenvolvido utilizando o framework React Native com Expo.",
       "tools": [
@@ -54,6 +58,7 @@
       "repository": "https://github.com/VictorEmanuell/rolldice-mobile"
     },
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/generic-screen.png?raw=true",
       "title": "API Rolldice",
       "description": "API desenvolvida para o App Rolldice utilizando o framework Rails do Ruby.",
       "tools": [
@@ -64,6 +69,7 @@
       "repository": "https://github.com/VictorEmanuell/rolldice-mobile"
     },
     {
+      "image": "https://github.com/VictorEmanuell/portfolio/blob/main/src/assets/screenshots/generic-screen.png?raw=true",
       "title": "App de Anotações",
       "description": "O app consiste em um aplicativo de anotações desenvolvido utilizando o framework React Native com Expo.",
       "tools": [

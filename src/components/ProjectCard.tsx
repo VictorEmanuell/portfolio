@@ -1,25 +1,25 @@
-import Image from "next/image";
-import TestImage from '@/assets/profile.jpg';
 import {Button} from "@/components/Button";
 
 interface ProjectCardProps {
     image: string;
-    tools: string;
+    tools: Array<string>;
     title: string;
     description: string;
+    web?: string;
+    repository?: string;
 }
 
-export function ProjectCard({tools, title, description}: ProjectCardProps) {
+export function ProjectCard({image, tools, title, description, web, repository}: ProjectCardProps) {
     return (
         <div className='w-72 border border-gray text-gray'>
-            <Image
-                src={TestImage}
+            <img
+                src={image}
                 alt={'Imagem do projeto'}
                 className='aspect-video'
             />
 
             <div className='w-full h-[1px] bg-gray'/>
-            <p className='p-2'>{tools}</p>
+            <p className='p-2'>{tools.map(tool => tool + ' ')}</p>
 
             <div className='w-full h-[1px] bg-gray'/>
             <div className='p-4 pb-4'>
@@ -27,8 +27,13 @@ export function ProjectCard({tools, title, description}: ProjectCardProps) {
                 <p className='text-sm mb-4'>{description}</p>
 
                 <div className='flex flex-row gap-2'>
-                    <Button title={'Acessar'} href={'https://github.com/VictorEmanuell'}/>
-                    <Button title={'GitHub'} href={'https://github.com/VictorEmanuell'} type='secondary'/>
+                    {
+                        web && <Button title='Acessar' href={web}/>
+                    }
+
+                    {
+                        repository && <Button title='GitHub' href={repository} type='secondary'/>
+                    }
                 </div>
             </div>
         </div>

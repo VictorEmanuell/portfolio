@@ -22,8 +22,9 @@ export function Banner() {
                 <Button title='Contato' href='/contact'/>
             </div>
 
-            <div className='border-2 border-primary rounded-full md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'>
-                <Image src={ProfileImage} alt={'Imagem de perfil'} width={300} className='rounded-full'/>
+            <div
+                className='border-2 border-primary rounded-full overflow-hidden md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'>
+                <Image src={ProfileImage} alt={'Imagem de perfil'} width={300}/>
             </div>
         </div>
     );
