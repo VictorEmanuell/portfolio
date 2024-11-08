@@ -15,7 +15,7 @@ export function Projects() {
                 <div className='w-96 h-0.5 bg-primary sm:hidden md:flex'/>
 
                 <Link
-                    href={'/'}
+                    href={'/projects'}
                     className='absolute right-0 hover:text-primary hover:underline'
                 >
                     Ver todos {'~~>'}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import {Button} from "@/components/Button";
 
 interface ProjectCardProps {
@@ -11,10 +13,12 @@ interface ProjectCardProps {
 
 export function ProjectCard({image, tools, title, description, web, repository}: ProjectCardProps) {
     return (
-        <div className='w-72 border border-gray text-gray'>
-            <img
+        <div className='w-72 h-full border border-gray text-gray'>
+            <Image
                 src={image}
                 alt={'Imagem do projeto'}
+                width={1920}
+                height={1080}
                 className='aspect-video'
             />
 

@@ -1,15 +1,11 @@
 'use client';
 
+import {useEffect, useState} from "react";
+import {usePathname} from 'next/navigation'
 import Link from "next/link";
 import Image from "next/image";
 
 import Logo from '@/assets/logo.svg';
-import {useEffect, useState} from "react";
-
-type RoutesType = Array<{
-    title: string;
-    position: number;
-}>
 
 const ROUTES = [
     {title: 'projetos', elementId: 'projects'},
@@ -19,7 +15,13 @@ const ROUTES = [
     {title: 'contato', elementId: 'contact-and-media'},
 ]
 
+type RoutesType = Array<{
+    title: string;
+    position: number;
+}>
+
 export function Header() {
+    const pathname = usePathname();
     const [routes, setRoutes] = useState<RoutesType>([]);
 
     useEffect(() => {
@@ -45,18 +47,24 @@ export function Header() {
                 Victor Emanuel
             </Link>
 
-            <div className='flex flex-row justify-between items-center gap-6 sm:hidden md:flex'>
-                {routes.map(route => {
-                    return (
-                        <button key={route.title}
-                                onClick={() => window.scrollTo({top: route.position ?? 0, behavior: 'smooth'})}>
-                            <p className='font-medium text-gray hover:underline hover:text-green-400'>
-                                <span className='text-primary'>#</span>
-                                {route.title}
-                            </p>
-                        </button>
-                    );
-                })}
+            <div
+                className={`${pathname === '/projects' ? 'hidden' : 'sm:hidden md:flex'} flex-row justify-between items-center gap-6`}
+            >
+                {
+                    routes.map(route => {
+                        return (
+                            <button
+                                key={route.title}
+                                onClick={() => window.scrollTo({top: route.position ?? 0, behavior: 'smooth'})}
+                            >
+                                <p className='font-medium text-gray hover:underline hover:text-green-400'>
+                                    <span className='text-primary'>#</span>
+                                    {route.title}
+                                </p>
+                            </button>
+                        );
+                    })
+                }
             </div>
         </header>
     );
