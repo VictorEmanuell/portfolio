@@ -19,7 +19,7 @@ export function Banner() {
                     O brabo do front end. O maior de todos os tempos. Uma máquina!
                 </p>
 
-                <Button title='Contato' href='/contact'/>
+                <Button title='Contato' href='https://wa.me/5579988130992'/>
             </div>
 
             <div
