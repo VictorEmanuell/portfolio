@@ -23,7 +23,8 @@ export function Banner() {
             </div>
 
             <div
-                className='border-2 border-primary rounded-full overflow-hidden md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'>
+                className='sm:hidden md:flex border-2 border-primary rounded-full overflow-hidden md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'
+            >
                 <Image src={ProfileImage} alt={'Imagem de perfil'} width={300}/>
             </div>
         </div>
