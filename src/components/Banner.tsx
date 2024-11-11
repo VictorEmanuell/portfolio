@@ -16,7 +16,7 @@ export function Banner() {
                 </p>
 
                 <p className='font-normal text-xl text-gray'>
-                    O brabo do front end. O maior de todos os tempos. Uma máquina!
+                    Desenvolvedor fullstack especializado em React e NodeJS.
                 </p>
 
                 <Button title='Contato' href='https://wa.me/5579988130992'/>
