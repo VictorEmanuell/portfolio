@@ -1,8 +1,8 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import {Button} from "@/components/Button";
 
-import ProfileImage from '@/assets/profile.jpg';
+// import ProfileImage from '@/assets/profile.jpg';
 
 export function Banner() {
     return (
@@ -22,11 +22,11 @@ export function Banner() {
                 <Button title='Contato' href='https://wa.me/5579988130992'/>
             </div>
 
-            <div
-                className='sm:hidden md:flex border-2 border-primary rounded-full overflow-hidden md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'
-            >
-                <Image src={ProfileImage} alt={'Imagem de perfil'} width={300}/>
-            </div>
+            {/*<div*/}
+            {/*    className='sm:hidden md:flex border-2 border-primary rounded-full overflow-hidden md:hover:-translate-x-16 transition self-center sm:mt-20 md:mt-0'*/}
+            {/*>*/}
+            {/*    <Image src={ProfileImage} alt={'Imagem de perfil'} width={300}/>*/}
+            {/*</div>*/}
         </div>
     );
 }
